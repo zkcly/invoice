@@ -1,0 +1,108 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+ul, li { list-style: none; }
+ul{
+  padding: 0;
+}
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+// 全局路由组件样式
+.page-container {
+  width: 100%;
+  padding: 10px 40px;
+}
+
+.page-header {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.page-content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+//底边线
+.borderBottom{
+  border-bottom: 1px solid #ECECEC;
+}
+//内容左边距
+.pl25{
+  padding-left: 25px;
+}
+//global中的样式--s
+.globalAlertSuccess .el-icon-warning:before{
+  font-size: 60px;
+  color: #FF4D4F;
+}
+.globalAlertSuccess .el-icon-success:before{
+  font-size: 60px;
+}
+
+

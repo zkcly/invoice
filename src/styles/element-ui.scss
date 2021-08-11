@@ -1,0 +1,182 @@
+// cover some element-ui styles
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+    font-weight: 400 !important;
+}
+
+.el-upload {
+    input[type="file"] {
+        display: none !important;
+    }
+}
+
+.el-upload__input {
+    display: none;
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+    transform: none;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+    .el-upload {
+        width: 100%;
+        .el-upload-dragger {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+// dropdown
+.el-dropdown-menu {
+    a {
+        display: block
+    }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+    box-sizing: content-box;
+}
+
+.el-button--primary {
+    background-color: #5E8CF9;
+    border-color: #5E8CF9;
+}
+
+.el-button--primary:focus,
+.el-button--primary:hover {
+    background: #6E97FA;
+    border-color: #6E97FA;
+    color: #FFF;
+}
+
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:active,
+.el-button--primary.is-disabled:focus,
+.el-button--primary.is-disabled:hover {
+    background-color: #5E8CF9;
+    border-color: #5E8CF9;
+}
+
+.el-button--primary.is-plain:hover {
+    background-color: #5E8CF9;
+    border-color: #5E8CF9;
+}
+
+//分页
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: transparent;
+    border: 1px solid #5E8CF9;
+    color: #5E8CF9;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+    background: #FFFFFF;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+    color: #5E8CF9
+}
+
+//表格
+//.el-table thead tr{
+//  //background: #FAFAFA;
+//  background: red !important;
+//}
+.el-table thead th,
+.el-table thead tr {
+    background-color: #FAFAFA;
+}
+
+.el-table__empty-text {
+    line-height: normal;
+}
+
+//输入框设置统一高度
+.el-input__inner,
+.el-input__icon {
+    height: 32px;
+    line-height: 32px;
+}
+.el-input__inner{
+    line-height: 1px!important;
+}
+
+//树结构选中后强调颜色
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+    background-color: #66b1ff87;
+}
+
+.el-tree>.el-tree-node {
+    height: 30px; //这里的高根据实际情况
+    min-width: 100%;
+    display: inline-block;
+}
+
+.el-menu {
+    border-right: none;
+}
+
+.el-form-item__error {
+    padding-top: 0px;
+}
+
+.el-scrollbar__wrap {
+    height: 105%;
+}
+
+//智能赋码
+el-button--primary.is-plain {
+    color: #5E8CF9;
+}
+
+.el-button--primary.is-plain {
+    color: #5E8CF9;
+    background: #fff;
+    border-color: #5E8CF9;
+}
+
+//去掉type="number"时候的上下箭头
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -o-appearance: none !important;
+    -ms-appearance: none !important;
+    appearance: none !important;
+    margin: 0;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    -o-appearance: textfield;
+    -ms-appearance: textfield;
+    appearance: textfield;
+}
+
+.el-tree-node__label {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 180px;
+}
+.el-dialog{
+    transform: none;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+}
